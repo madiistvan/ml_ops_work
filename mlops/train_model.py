@@ -9,14 +9,14 @@ from pytorch_lightning.callbacks import ModelCheckpoint
 from pytorch_lightning.loggers import WandbLogger
 
 
-def load_dataset(batch_size):
-    train_images = torch.load("data/processed/train_images.pt")
-    train_targets = torch.load("data/processed/train_targets.pt")
+def load_dataset(batch_size, path="data/processed"):
+    train_images = torch.load(f"{path}/train_images.pt")
+    train_targets = torch.load(f"{path}/train_targets.pt")
     train = data_utils.TensorDataset(train_images, train_targets)
     trainloader = data_utils.DataLoader(train, batch_size=batch_size, shuffle=True)
 
-    test_images = torch.load("data/processed/test_images.pt")
-    test_targets = torch.load("data/processed/test_targets.pt")
+    test_images = torch.load(f"{path}/test_images.pt")
+    test_targets = torch.load(f"{path}/test_targets.pt")
     test = data_utils.TensorDataset(test_images, test_targets)
     testloader = data_utils.DataLoader(test, batch_size=batch_size, shuffle=False)
 

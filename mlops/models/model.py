@@ -26,6 +26,9 @@ class NeuralNet(nn.Module):
         self.logsoftmax = nn.LogSoftmax(dim=1)
 
     def forward(self, x):
+        if x.ndim != 3:
+            raise ValueError('Expected input to a 3D tensor')
+        
         x = x.unsqueeze(1)
         x = self.activation(self.bn1(self.conv1(x)))
         x = self.dropout(x)
