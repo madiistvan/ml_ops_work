@@ -18,8 +18,8 @@ jobs:
         python-version: '3.10'
         cache: 'pip'
     - name: Install dependencies
-        run: pip install ruff
+      run: pip install ruff
     - name: Check code
-        run: ruff check
+      run: ruff check
     - name: Check code
-        run: ruff format
+      run: ruff format
