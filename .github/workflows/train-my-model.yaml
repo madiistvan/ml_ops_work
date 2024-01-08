@@ -31,6 +31,7 @@ jobs:
           # this authenticates that the right permissions are in place
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          cd mlops/
           # send all information to report.md that will be reported to us when the workflow finish
           cat classification_report.txt >> report.md
           cml-publish confusion_matrix.png --md >> report.md
