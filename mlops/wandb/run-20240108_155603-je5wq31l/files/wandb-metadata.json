@@ -1,0 +1,37 @@
+{
+    "os": "macOS-14.0-arm64-arm-64bit",
+    "python": "3.11.6",
+    "heartbeatAt": "2024-01-08T14:56:04.129810",
+    "startedAt": "2024-01-08T14:56:03.299003",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/Users/madiistvan/DTU/Jan24/ml_ops/ml_ops_work/mlops/train_model_cml.py",
+    "codePathLocal": "train_model_cml.py",
+    "codePath": "mlops/train_model_cml.py",
+    "git": {
+        "remote": "https://github.com/madiistvan/ml_ops_work.git",
+        "commit": "962f83d90a00af301f790f955f781614db48fa2b"
+    },
+    "email": "madi.istvan20@gmail.com",
+    "root": "/Users/madiistvan/DTU/Jan24/ml_ops/ml_ops_work",
+    "host": "Madi-Air.localdomain",
+    "username": "madiistvan",
+    "executable": "/opt/homebrew/Caskroom/miniforge/base/envs/dl_project/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 8,
+    "disk": {
+        "/": {
+            "total": 228.27386474609375,
+            "used": 199.4909439086914
+        }
+    },
+    "gpuapple": {
+        "type": "arm",
+        "vendor": "Apple"
+    },
+    "memory": {
+        "total": 8.0
+    }
+}

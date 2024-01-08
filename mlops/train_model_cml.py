@@ -2,12 +2,12 @@ import hydra
 import matplotlib.pyplot as plt
 import torch
 import torch.utils.data as data_utils
+from lightning.lightning_nn import LightningNeuralNet
 from pytorch_lightning import Trainer
 from pytorch_lightning.callbacks import ModelCheckpoint
 from pytorch_lightning.loggers import WandbLogger
 
-from mlops.lightning.lightning_nn import LightningNeuralNet
-from mlops.models.model import NeuralNet
+from models.model import NeuralNet
 
 
 def load_dataset(batch_size, path="data/processed"):
