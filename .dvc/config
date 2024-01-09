@@ -1,5 +1,8 @@
 [core]
-    remote = storage
+    remote = remote_storage
     autostage = true
 ['remote "storage"']
     url = gdrive://1v5R-LrEU3rAhgLD2boGPbWTPfnu2kfGw
+['remote "remote_storage"']
+    url = gs://dtu-ml-ops-bucket/
+    version_aware = true
